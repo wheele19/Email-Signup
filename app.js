@@ -24,7 +24,7 @@ app.post('/subscribe', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'masculinereset@gmail.com',
+      user: 'email@gmail.com',
       pass: emailPassword,
     },
   });
@@ -35,10 +35,10 @@ app.post('/subscribe', (req, res) => {
 
 
   const mailOptions = {
-    from: 'no-reply@themasculinereset.com',
-    to: 'masculinereset@gmail.com',
-    subject: 'New subscriber for The Masculine Reset',
-    text: `A new subscriber with the email address: ${email} has signed up for The Masculine Reset.`,
+    from: 'no-reply@email.com',
+    to: 'email@gmail.com',
+    subject: 'New subscriber for ...',
+    text: `A new subscriber with the email address: ${email} has signed up for ...`,
   };
 
 
